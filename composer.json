@@ -1,0 +1,41 @@
+{
+  "name": "squirtle/shortcode",
+  "description": "Shortcode package for CMS application",
+  "keywords": [
+    "squirtle",
+    "Shortcode",
+    "CMS",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Squirtle",
+      "email": "gulmzugur@gmail.com"
+    }
+  ],
+  "type": "package",
+  "license": "MIT",
+  "require": {
+    "illuminate/support": "^10.16"
+  },
+  "autoload": {
+    "psr-4": {
+      "Squirtle\\Shortcode\\": "src/"
+    },
+    "files": [
+      "helpers/shortcode.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Squirtle\\Shortcode\\Providers\\ShortcodeServiceProvider"
+      ],
+      "aliases": {
+        "Shortcode": "Squirtle\\Shortcode\\Facades\\Shortcode"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
